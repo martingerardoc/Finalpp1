@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deportes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../Style.css/style.css">
+<link rel="icon" href="../Imagenes/icono.jpeg">
+<title>Turismo San Nicolas</title>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">INICIO</a>
+    <a href="../index.html" class="w3-bar-item w3-button">VOLVER</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> DEPORTE</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> CLUBES</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">CLUBES</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">BUSCAR</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-au w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">DEPORTES</h3>
+  
+  <p>Bienvenidos a la vibrante escena deportiva de nuestra ciudad, donde la pasión y la competencia se fusionan para ofrecerte una experiencia única. San Nicolás se enorgullece de sus diversos clubes deportivos, creando un destino ideal para amantes de todas las disciplinas, ya sean al aire libre o de salón.
+
+    En los parques y espacios al aire libre, podrás disfrutar de emocionantes partidos de fútbol, rugby o hockey. Los extensos campos verdes y modernas instalaciones brindan el escenario perfecto para vivir la intensidad del deporte y conectarte con la naturaleza.
+    
+    Para aquellos que buscan desafíos bajo techo, nuestros clubes de deportes de salón ofrecen opciones tan variadas como el básquetbol, vóley, o incluso el tenis de mesa. La competitividad y camaradería florecen en estos espacios cubiertos, donde la destreza y la estrategia se combinan para crear experiencias deportivas inolvidables.
+    
+    Además, San Nicolás se enorgullece de ser anfitrión de eventos y torneos deportivos a nivel local e internacional. Sumérgete en la efervescencia de la competición y apoya a tus equipos favoritos mientras te sumerges en la cultura deportiva de la ciudad.
+    
+    Ya seas un atleta experimentado o simplemente un entusiasta, en San Nicolás encontrarás el club perfecto para canalizar tu pasión por el deporte. Únete a nosotros y experimenta la emoción, el compañerismo y la excelencia atlética que definen nuestra escena deportiva. ¡Te esperamos para compartir juntos el espíritu deportivo de San Nicolás!</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Reconocimiento a deportistas</b></p><br>
+      <img src="../Imagenes/Deportes/2deportistas.webp" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        En las diferentes disciplinas deportivas, San Nicolás se enorgullece de contar con atletas destacados que han elevado el estandarte de la ciudad a nivel nacional e internacional. En el ámbito del fútbol, talentosos jugadores han brillado en campos de renombre, llevando consigo el espíritu competitivo y la destreza técnica que caracteriza a nuestra comunidad. En deportes acuáticos, nadadores provenientes de San Nicolás han dejado huella con su habilidad y determinación en cada brazada.
+        
+        Además, en deportes de raqueta, la destreza y agilidad de nuestros representantes han cautivado a audiencias y competidores por igual. En eventos de atletismo, corredores veloces han llevado el nombre de San Nicolás a la cima del podio, mostrando una dedicación inquebrantable hacia el rendimiento excepcional.
+        
+        Estos atletas anónimos, pero intrépidos, encarnan el espíritu deportivo de San Nicolás, demostrando que nuestra ciudad es cuna de talento y pasión por el rendimiento excepcional en diversas disciplinas.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    futbol
+  </div>
+  <div class="w3-quarter w3-section">
+    basket
+  </div>
+  <div class="w3-quarter w3-section">
+    Voley
+  </div>
+  <div class="w3-quarter w3-section">
+    Rugby
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-dep w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">CLUBES DE SAN NICOLAS</h3>
+  <p class="w3-center"><em>Distintos clubes en donde se puede compartir en familia<br> Click en las imagenes para agrandar</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="../Imagenes/Deportes/Somisa.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CLUB SOMISA">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../Imagenes/Deportes/regatas.webp" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CLUB REGATAS">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../Imagenes/Deportes/belgrano.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CLUB BELGRANO">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../Imagenes/Deportes/laemilia.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CLUB LA EMILIA">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="../Imagenes/Deportes/ciclista.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CLUB DE CICLISTAS">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../Imagenes/Deportes/Estadio.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="../Imagenes/Deportes/Autodromosn.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+  </div>
+  <!-----------Table-------------->
+  <h2 id="table" class="title-table">Mas informacion</h2>
+  <table  class="table">
+    <thead>
+       <tr>
+        <th>IMAGEN</th>
+        <th>CLUB</th>
+        <th>DIRECCION</th>
+        <th>DESCRIPCION</th>
+       </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td>SOMISA</td>
+        <td>Los Ceibos 1950, San Nicolás de Los Arroyos, Provincia de Buenos Aires</td>
+        <td>El barrio Somisa es uno de los numerosos barrios que conforman la ciudad de San Nicolás de los Arroyos, Argentina; 
+          a 9 km del microcentro. Formó parte de una estratégica decisión tomada en el Plan de Industrialización Argentino, llevado a cabo durante los dos primeros gobiernos de Juan Domingo Perón, de 1946 a 1955, para instalar a 220 km de Buenos Aires este polo de industria pesada. Físicamente se encuentra en el Partido de San Nicolás mientras que la acería SIDERAR, 
+          actualmente privatizada, se encuentra en el Partido de Ramallo, provincia de Buenos Aires.
+          Dentro del mismo barrio se encuentra el Club Somisa. Este club cuenta con numerosas 
+          actividades deportivas y con excelentes instalaciones, entre ellas la pileta olímpica (única en la ciudad), 
+          canchas de tenis, cancha de básquet principal y auxiliar, cancha de fútbol (la más importante de la zona), cancha de pelota paleta, 
+          cancha de paddle, cancha de hockey de material sintético (única en la zona) entre otros. 
+          También cuenta con un sector de Náutica, y con una zona de camping.</td>
+       </tr>
+       <tr>
+        <td>02</td>
+        <td>REGATAS</td>
+        <td>Juan Manuel de Rosas 100, B2900 San Nicolás de Los Arroyos, Provincia de Buenos Aires</td>
+        <td>Fue fundado el 22 de octubre de 1892 por iniciativa de un grupo de hombres encabezado por el periodista y 
+          escritor Dámaso Valdés. Se reunían en la sede del Club Gimnasia y Esgrima, Calle Comercio (act. Mitre) 283, resultando de sus deliberaciones la fundación del Club de Regatas San Nicolás.
+
+          En la primera comisión directiva, que debía redactar el estatuto de la entidad de acuerdo a lo establecido en el acta fundacional, 
+          figuraban: Dámaso Valdés (presidente), Rafael Posadas (vicepresidente), Jorge Tucker (capitán), José María Cátala (subcapitán), Federico Gard (tesorero), Apolinario Hurtado (secretario), y los vocales Eduardo Vila, Francisco Pi y Suner, Dr. Julio Rojas, Arturo Nunez, Dr. Rodolfo Cattaneo, Teodoro Garay, Carlos Spongia, Maximiano Vázquez Teodoro Morris. En la época de su fundación, Regatas contaba con 67 socios. La fiesta inaugural se realizó el 2 de febrero de 1893, con un programa de regatas que se integró con seis carreras, en las que compitieron 10 botes. Si bien las regatas, como disciplina deportiva fue la principal preocupación, ya en la primera década de existencia, la natación, bochas, tiro al blanco, esgrima y la cultura física habían ganado su espacio. En 1902 se decidió incorporar a la Unión de Remeros Aficionados. Para entonces el Club de Regatas comenzaba a ser reconocido nacional e internacionalmente.
+          
+          Quince años avanzado el nuevo siglo, la entidad agregó un nuevo predio al que ya tenía, muy protegido por la barranca ribereña, 
+          del cual tomó la fisonomía física actual, junto con un ambicioso proyecto de forestación y construcción de canchas de tenis de polvo de ladrillo.
+          
+          A su vez, en la faz institucional, podemos decir que hoy el Club de Regatas ha expandido sus actividades a nuevas áreas, y 
+          ha incorporado nuevas sedes, como la del ex Club Arco Iris (1991), hoy Sede Calle Rivadavia, y la del Camping de la Asociación de 
+          Propietarios de Bienes Raíces, hoy Sede Prado Español (adquirida por fusión con esta entidad)</td>
+       </tr>
+       <tr>
+        <td>03</td>
+        <td>BELGRANO</td>
+        <td>Pellegrini 476, B2900 DMJ, Provincia de Buenos Aires</td>
+        <td>En el año 1927, un grupo de personas se reúne para fomentar y controlar el deporte en la ciudad. Esas personas eran Fortunato Bonelli, Ángel Bossi, Adhemar Bricchi, Ricardo Fulia, 
+          Antonio Gambadori, Augusto Gambadori, Norberto Gil, Daniel Lacomba, Ángel Magni, Eduardo Méndez, Beltrán Petrella, Juan Petrella, 
+          Alberto Sbaffo, Carlos Salviolo, Eduardo Solari, Rolando Sorrentino y Daniel Valosio, entre otros. A ellos, luego se agregan los miembros 
+          de la Asociación Atlética de Jóvenes, muchos de ellos menores de edad y deciden crear una entidad deportiva y social, un club al cual 
+          caracterizan de atlético y que llevaría el nombre del Creador de la bandera patria argentina, el abogado, economista y militar Don Manuel Belgrano.4​
+
+          El origen del nombre, según Adhemar Bricchi, proviene del pedido a la revista Caras y Caretas, de una medalla a nombre del 
+          "Club Atlético Belgrano" para ser entregada como trofeo.5​
+          
+          La reunión final para la creación del nuevo club se dio en el Hotel Savoia, en donde se elaboraría el acta de fundación, se nombrarían 
+          presidentes y vicepresidentes provisionales y finalmente se ordenaría una asamblea para la elección definitiva de las autoridades. 
+          Si bien fue fundado especialmente para la práctica del "foot ball", tenía el carácter de atlético, destacando también el básquet. 
+          Entre otras actividades, se fomentan los juegos de mesa, como el ajedrez.
+          
+          Para finales de la década del '20, el club logra, mediante un préstamo facilitado por Antonio García Núñez, 
+          la compra del predio ubicado en calle Lincoln n.º 364 (hoy calle Urquiza). En este predio se instala el campo donde se practica fútbol.4​
+          
+          Los primeros colores del club eran el violeta y el amarillo, que luego pasaron a ser el blanco y celeste, 
+          para finalmente en 1929 cambiar al rojo y dorado que actualmente distinguen a la institución.</td>
+       </tr>
+       <tr>
+        <td>04</td>
+        <td>LA EMILIA</td>
+        <td>17 de Septiembre, La Emilia, Provincia de Buenos Aires</td>
+        <td>El Club Social y Deportivo La Emilia es una institución deportiva argentina fundada el 2 de octubre de 1930, ubicada en la 
+          localidad de La Emilia, Buenos Aires, cuya principal actividad deportiva es el fútbol. Participó en el Torneo Federal B,5​ cuarta 
+          división del fútbol de Argentina, Copa Argentina6​ y torneo local de la Liga Nicoleña de Fútbol.7​8​ aunque tuvo otros deportes en el 
+          pasado, como en el presente.
+
+          Su futbolista más conocido es Danilo Rinaldi, natural de la cercana Conesa, quien jugó para el club hasta 2008, 
+          cuando emigró a San Marino y se convirtió al poco tiempo en un internacional absoluto del país europeo, logrando disputar 
+          dos eliminatorias mundialistas (2010 y 2014) y enfrentando a Inglaterra en el Estadio de Wembley.9​
+          El presidente de la institución deportiva es Víctor Fenossi.10​ Son conocidos por el apodo de Los Pañeros.11​</td>
+       </tr>
+       <tr>
+        <td>05</td>
+        <td>Ciclistas</td>
+        <td>Gardel 652, San Nicolás de Los Arroyos, Provincia de Buenos Aires</td>
+        <td>La institución de Barrio Pezzi fue fundada un 11 de octubre de 1994, por un entusiasta grupo de 30 ciclistas que 
+          anteriormente entrenaban en Autopista -con varios casos fatales- y competían en el lugar donde actualmente se levanta Comirsa. 
+          Hoy, a 27 años de aquel día, el presente sorprende al club con una gran cantidad de obras y emprendimientos, merced al trabajo de las sucesivas comisiones directivas y del apoyo 
+          incondicional de la Municipalidad como así también de empresas industriales, comerciales y de servicios y particulares.
+        
+          Se celebro el 27° aniversario de la fundación oficial del Club Ciclista San Nicolás. Ese nacimiento se cristalizó luego que en la década de los ochenta un grupo de ciclistas concretaran competencias en las calles internas del actual Plan Comirsa. Pero ante la implementación de citado plan, se presentó la necesidad de contar con un lugar que “los cobijara” y en esa búsqueda se adquirió el predio de cuatro hectáreas y media ubicado en Carlos Gardel 652 del Barrio Pezzi, 
+          al precio de U$S 20.000 que se abonó con un entrega inicial de $ 6000 y 33 cuotas de U$S 550 c/u.
+          Y para legalizar todo ello, el 11 de octubre de 1994 se fundó el Club Ciclista San Nicolás. Ya en posesión del lugar, fue marcada una pista de tierra, donde se comenzó a competir, pero merced a una gestión del periodista deportivo ya desaparecido Oscar Vigo, el entonces intendente Dr. Eduardo Di Rocco dispuso que el óvalo de 500 metros recibiera una pavimentación en frío, lo que hizo que la entidad contara con una excelente pista, 
+          donde comenzaron a disputarse festivales de ciclismo zonales, regionales, provinciales y hasta nacionales.
+        </td>
+       </tr>
+       <tr>
+        <td>06</td>
+        <td>ESTADIO UNICO</td>
+        <td>Av. Rucci, Damaso Valdez y, B2900 San Nicolás de Los Arroyos, Provincia de Buenos Aires</td>
+        <td>El estadio Único de San Nicolás es un recinto deportivo ubicado en la ciudad de San Nicolás de los Arroyos, en el norte de la 
+          provincia de Buenos Aires, Argentina. Tiene una capacidad de 23 000 espectadores. 
+          Fue inaugurado el 19 de octubre de 2019.
+          Se encuentra estratégicamente ubicado en el kilómetro 234 de la Ruta Nacional 9, sobre la intersección de las avenidas Dámaso Valdés y Rucci.
+          Cuenta con una capacidad de 23.000 espectadores que pueden incrementarse a 35.000 utilizando el campo de juego.
+          La obra comenzó en septiembre de 2014, cuando se construyeron las bases, columnas e inclinaciones donde luego se apoyarían las tribunas. 
+          Luego de 5 años de iniciadas las obras, finalmente el estadio fue terminado.
+          Fue construido de acuerdo a las reglamentaciones de la Asociación del Fútbol Argentino (AFA) y de la Unión Argentina de Rugby (UAR). Además, cuenta con la infraestructura necesaria para impulsar el deporte local brindando la posibilidad de realizar entrenamientos y competiciones en altas categorías de diferentes disciplinas. Sus instalaciones permiten también, el desarrollo de eventos corporativos y convenciones. Es el estadio más importante de la región.
+          Desde 2020 el estadio fue designado sede frecuente de la Copa Argentina, debido, principalmente, a la ubicación a una distancia similar entre equipos de las regiones centro, norte y litoral del país y los equipos de la Ciudad de Buenos Aires y alrededores.
+          A pesar de ser utilizado regularmente para partidos de la Liga Nicoleña de Fútbol, el primer partido oficial por torneos de AFA lo disputaron Douglas Haig de Pergamino y Defensores Belgrano de Villa Ramallo por la fase preliminar de la Copa Argentina 2020-21.
+          
+          En 2022 albergó el encuentro de la fecha 35 de la Primera Nacional entre Brown de Adrogué y Belgrano de La Paz (Bolivia)|. Ante las altas chances de ascenso del equipo pirata y la posibilidad de que hubiera infiltrados en el estadio del tricolor, ambos clubes junto a la AFA y los organismos 
+          de seguridad decidieron trasladar el encuentro a este escenario para que asista la parcialidad boliviana sin inconvenientes.1​2​
+          El 9 de septiembre de 2023. El estadio albergó un partido amistoso internacional entre River Plate y Universidad Católica de Chile. El resultado fue 1 a 0 a favor del equipo millonario con gol de Esequiel Barco.</td>
+       </tr>
+       <tr>
+        <td>07</td>
+        <td>AUTODROMO</td>
+        <td>Km 225 autopista Rosario Buenos Aires.</td>
+        <td>El Autódromo Juan María Traverso es un circuito de competiciones de deporte motor ubicado en las afueras de la ciudad de San Nicolás de los Arroyos, Buenos Aires, Argentina. Se encuentra en el kilómetro 225 de la Autopista Buenos Aires- Rosario y fue inaugurado el 7 de octubre de 2018 con una competencia de Súper TC 2000 con el nombre de Circuito San Nicolás Ciudad.1​ Desde el 30 de octubre de 2022, cambió su denominación pasando a llevar el nombre de Juan María Traverso, múltiple campeón del automovilismo argentino y uno de los impulsores para la construcción de este autódromo.2​
+
+          Su modernidad, tecnología y la ventaja de estar ubicado dentro de un predio ferial de 110 hectáreas lo transforman en un circuito único en el país. Sus características técnicas y su ubicación estratégica lo transforman en una plaza atractiva para desarrollar competencias deportivas, recibir exhibiciones y todo tipo de eventos relacionados con el deporte motor.3​
+          
+          El circuito cuenta con al menos tres variantes de 4.000, 3.959 y 2.414 metros de longitud e incluye un trióvalo perimetral de 1,5 millas. Su diseño fue creado para poder recibir a todas las categorías nacionales y también eventos deportivos internacionales. El Predio cuenta, en esta primera etapa, con sanitarios, sector de talleres y un playón de boxes de 15.000 m² que estará destinado también a grandes eventos, ferias y festivales. Desde 2017 y por los próximos diez años, el Predio es sede estable de la Expoagro, 
+          la exposición agropecuaria a cielo abierto más grande de Latinoamérica. Cada mes de marzo visitan la muestra alrededor de 150.000 personas.</td>
+       </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Tercer Parallax Image with Portfolio Text -->
+<div class="bgimg-au w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <iframe width="997" height="561" src="https://www.youtube.com/embed/ntiSPjKtgHM" title="AUTÓDROMO DE SAN NICOLÁS: DATOS Y CÁMARA ON BOARD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+<br>
+<!-- Cuarto Parallax Image with Portfolio Text -->
+<div class="bgimg-est w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <iframe width="997" height="400" src="https://www.youtube.com/embed/Sto-caekwSc" title="#SedesEn1Minuto Estadio Único de San Nicolás" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+
+<br>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>INICIO</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <div>
+    <p>Desarrollo en <a href="http://isft38.edu.ar/" title="W3.CSS" target="_blank" class="w3-hover-text-green">ISFT 38</a></p>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+.w3-top{
+  color:black;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-est, .bgimg-a, .bgimg-b, .bgimg-au , .bgimg-dep ,.bgimg-res .bgimg-rest2 ,.bgimg-gour{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('../Imagenes/sanNicolas.jpg');
+  min-height: 200%;
+}
+
+.bgimg-a {
+  background-image: url('../Imagenes/Social/Snextremo.jpeg');
+  min-height: 200%;
+  
+}
+
+.bgimg-b {
+  background-image: url('../Imagenes/Social/Bares.jpg');
+  min-height: 200%;
+  
+}
+
+.bgimg-au {
+  background-image: url('../Imagenes/Deportes/Autodromo.jpeg');
+  min-height: 90%;
+  
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("../Imagenes/Costanera.jpg");
+  min-height: 400px;
+}
+
+.bgimg-dep {
+  background-image: url('../Imagenes/Deportes/1autodromo.jpg');
+  min-height: 90%;
+  
+}
+/* Third image (Contact) */
+.bgimg-est {
+  background-image: url("../Imagenes/Deportes/Estadio.jpg");
+  min-height: 400px;
+}
+
+.bgimg-res {
+  background-image: url('../Imagenes/restaurantes/Platos.jpg');
+  min-height: 50%;
+  
+}
+.bgimg-rest2 {
+  background-image: url('../Imagenes/restaurantes/restaurant.jpg');
+  min-height: 50%;
+}
+.bgimg-gour{
+  background-image: url('../Imagenes/restaurantes/gourmet.jpg');
+  min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+/***************
+        Aside
+	****************/
+
+ 
+  .practicas-aside{
+    position: fixed;
+    top:300px;
+    right: 10px;
+    width: 150px;
+    height: 200px;
+    background-color: rgb(166, 183, 166);
+    z-index: 100;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .practicas-aside a{
+   color:  black;  
+  }
+
+  table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+td {
+  border: solid 1px #ffffff3f;
+  text-align: right;
+  background-color: hsla(170, 90%, 85%, 0.76);
+  padding: 12px;
+}
+
+  td {
+    display: table-cell;
+    vertical-align: inherit;
+}
