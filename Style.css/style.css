@@ -96,8 +96,8 @@ body, html {
  
   .practicas-aside{
     position: fixed;
-    top:300px;
-    right: 10px;
+    top: 410px;
+    right: 20px;
     width: 150px;
     height: 200px;
     background-color: rgb(166, 183, 166);
